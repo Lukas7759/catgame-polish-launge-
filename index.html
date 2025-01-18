@@ -1,0 +1,88 @@
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Trap Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="left-interface">
+    <div class="interface-section">
+      <h2>🏆 Statystyki Gry</h2>
+      <div class="stat">
+        <span>📊 Wynik (Gracz - Kot):</span>
+        <span id="score">0 - 0</span>
+      </div>
+      <div class="stat">
+        <span>⏱️ Czas Gry:</span>
+        <span id="timer">0:00</span>
+      </div>
+    </div>
+    
+    <div class="interface-section">
+      <h2>📖 Jak Grać</h2>
+      <p>
+        🎯 Kliknij na bańkę, aby ją zaznaczyć.<br>
+        🐱 Złap kota otaczając go bańkami!<br>
+        🎮 Kot może poruszać się po ukosie.<br>
+        ⚠️ Nie pozwól kotu dotrzeć do krawędzi!<br>
+        🔄 Wygraj więcej rund niż kot!
+      </p>
+    </div>
+  </div>
+
+  <div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+  </div>
+
+  <div class="right-interface">
+    <div class="interface-section">
+      <h2>🎮 Sterowanie</h2>
+      <div class="controls">
+        <button id="resetBtn" class="control-btn" title="Reset gry">
+          <img src="/reset2.png" alt="Reset">
+        </button>
+        <button id="replayBtn" class="control-btn" title="Zagraj ponownie">
+          <img src="/replay2.png" alt="Zagraj ponownie">
+        </button>
+        <button id="exitBtn" class="control-btn" title="Wyjście">
+          <img src="/exit2.png" alt="Wyjście">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="loading-screen">
+    <div class="loading-content">
+      <h1>Ładowanie gry...</h1>
+      <div class="progress-bar">
+        <div id="progress"></div>
+      </div>
+      <p id="loading-status">0%</p>
+      <p id="error-message"></p>
+      <button id="playBtn" class="play-btn hidden">
+        PLAY
+      </button>
+      <div class="copyright">
+        <p> 2024 Wszelkie prawa zastrzeżone</p>
+        <p>Pomysłodawca: Adrian S.</p>
+        <p>Grafika i wykonanie: xawery08</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="win-screen" class="hidden">
+    <div class="win-content">
+      <h2 id="win-message"></h2>
+      <p>Wynik końcowy: <span id="final-score"></span></p>
+      <button id="playAgainBtn" class="control-btn">
+        <img src="/replay2.png" alt="Zagraj ponownie">
+      </button>
+    </div>
+  </div>
+
+  <script src="loader.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
