@@ -1,5 +1,21 @@
 # Cat Trap Game
-**Wersja:** 0.0.5
+
+**Wersja:** a1.2.3
+
+## Co nowego 
+
+# Dodano 
+
+- Dźwięki zmiany pozycji
+- Dźwiki wygranej i muzykę powitalną
+- Do gry dodano utwory autorstwa artysty xawery08
+- Planowane poprawki fizyki gry
+- Gra dostępna w języku Angielskim i Polskim
+- Planowane poprawki interfejsu i funkcji
+- Gra dostępna na linku ww tym repo gry
+
+
+**Wersja:** alpha 0.0.5
 
 ## Opis
 Cat Trap Game to prosta, ale wciągająca gra logiczna 🧠, w której gracze muszą otoczyć kota 🐱, aby uniemożliwić mu ucieczkę. Plansza gry składa się z zielonych okręgów na fioletowo-czerwonym tle. Gracz klika na okręgi, aby je zaznaczyć i stworzyć barierę wokół kota. Kot może poruszać się po ukosie, a celem gry jest powstrzymanie go przed dotarciem do krawędzi planszy.
